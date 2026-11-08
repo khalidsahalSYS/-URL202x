@@ -13,7 +13,6 @@
         android:orientation="horizontal"
         android:paddingStart="16dp"
         android:paddingEnd="16dp">
-
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -22,42 +21,40 @@
             android:textColor="@color/brand"
             android:textSize="25sp"
             android:textStyle="bold" />
-
         <TextView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:background="@drawable/bg_card"
+            android:id="@+id/search_button"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:contentDescription="بحث"
             android:gravity="center"
             android:text="⌕"
             android:textColor="@color/text_primary"
-            android:textSize="27sp" />
+            android:textSize="28sp" />
     </LinearLayout>
 
     <ScrollView
+        android:id="@+id/feed_scroll"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:fillViewport="true"
         android:overScrollMode="never">
-
         <LinearLayout
+            android:id="@+id/feed_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/surface"
                 android:scrollbars="none">
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:paddingTop="12dp"
                     android:paddingBottom="12dp">
-
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -67,14 +64,12 @@
                         android:textColor="@color/text_primary"
                         android:textSize="17sp"
                         android:textStyle="bold" />
-
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:paddingStart="12dp"
                         android:paddingEnd="12dp">
-
                         <LinearLayout
                             android:layout_width="76dp"
                             android:layout_height="106dp"
@@ -98,7 +93,6 @@
                                 android:textColor="@color/text_primary"
                                 android:textSize="12sp" />
                         </LinearLayout>
-
                         <LinearLayout
                             android:layout_width="76dp"
                             android:layout_height="106dp"
@@ -106,12 +100,7 @@
                             android:background="@color/story_one"
                             android:gravity="bottom|center_horizontal"
                             android:paddingBottom="10dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/story_name_1"
-                                android:textColor="@color/surface"
-                                android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_name_1" android:textColor="@color/surface" android:textStyle="bold" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="76dp"
@@ -120,12 +109,7 @@
                             android:background="@color/story_two"
                             android:gravity="bottom|center_horizontal"
                             android:paddingBottom="10dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/story_name_2"
-                                android:textColor="@color/surface"
-                                android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_name_2" android:textColor="@color/surface" android:textStyle="bold" />
                         </LinearLayout>
                         <LinearLayout
                             android:layout_width="76dp"
@@ -133,12 +117,7 @@
                             android:background="@color/story_three"
                             android:gravity="bottom|center_horizontal"
                             android:paddingBottom="10dp">
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/story_name_3"
-                                android:textColor="@color/surface"
-                                android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/story_name_3" android:textColor="@color/surface" android:textStyle="bold" />
                         </LinearLayout>
                     </LinearLayout>
                 </LinearLayout>
@@ -151,7 +130,6 @@
                 android:background="@color/surface"
                 android:orientation="vertical"
                 android:padding="14dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -178,33 +156,28 @@
                         android:textColor="@color/muted"
                         android:textSize="15sp" />
                 </LinearLayout>
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="8dp"
-                    android:background="@color/divider" />
-
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="12dp" android:layout_marginBottom="8dp" android:background="@color/divider" />
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:orientation="horizontal">
                     <TextView
+                        android:id="@+id/photo_action"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="▣  @string/photo"
+                        android:text="▣  صورة"
                         android:textColor="@color/muted"
                         android:textSize="13sp" />
                     <TextView
+                        android:id="@+id/checkin_action"
                         android:layout_width="0dp"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="⌖  @string/check_in"
+                        android:text="⌖  تسجيل حضور"
                         android:textColor="@color/muted"
                         android:textSize="13sp" />
                 </LinearLayout>
@@ -217,7 +190,6 @@
                 android:background="@color/surface"
                 android:orientation="vertical"
                 android:padding="14dp">
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -237,29 +209,11 @@
                         android:layout_marginStart="10dp"
                         android:layout_weight="1"
                         android:orientation="vertical">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/post_author"
-                            android:textColor="@color/text_primary"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/post_time"
-                            android:textColor="@color/muted"
-                            android:textSize="12sp" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_author" android:textColor="@color/text_primary" android:textSize="15sp" android:textStyle="bold" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/post_time" android:textColor="@color/muted" android:textSize="12sp" />
                     </LinearLayout>
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="40dp"
-                        android:gravity="center"
-                        android:text="⋮"
-                        android:textColor="@color/muted"
-                        android:textSize="22sp" />
+                    <TextView android:layout_width="32dp" android:layout_height="40dp" android:gravity="center" android:text="⋮" android:textColor="@color/muted" android:textSize="22sp" />
                 </LinearLayout>
-
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -268,36 +222,17 @@
                     android:text="@string/post_text"
                     android:textColor="@color/text_primary"
                     android:textSize="15sp" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:background="@color/background" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="10dp"
-                    android:paddingBottom="8dp"
-                    android:text="👍 ١٢   ·   ٣ تعليقات"
-                    android:textColor="@color/muted"
-                    android:textSize="13sp" />
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:background="@color/divider" />
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="44dp"
-                    android:gravity="center"
-                    android:orientation="horizontal">
+                <View android:layout_width="match_parent" android:layout_height="120dp" android:background="@color/background" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="8dp" android:text="👍 ١٢   ·   ٣ تعليقات" android:textColor="@color/muted" android:textSize="13sp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:gravity="center" android:orientation="horizontal">
                     <TextView
                         android:id="@+id/post_action_like"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="♡  @string/like"
+                        android:text="♡  إعجاب"
                         android:textColor="@color/muted"
                         android:textSize="14sp" />
                     <TextView
@@ -306,17 +241,10 @@
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="◯  @string/comment"
+                        android:text="◯  تعليق"
                         android:textColor="@color/muted"
                         android:textSize="14sp" />
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:gravity="center"
-                        android:text="↗  @string/share"
-                        android:textColor="@color/muted"
-                        android:textSize="14sp" />
+                    <TextView android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="↗  مشاركة" android:textColor="@color/muted" android:textSize="14sp" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -328,42 +256,9 @@
         android:background="@color/surface"
         android:gravity="center"
         android:orientation="horizontal">
-        <TextView
-            android:id="@+id/nav_home"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="⌂\n@string/home"
-            android:textColor="@color/brand"
-            android:textSize="12sp"
-            android:textStyle="bold" />
-        <TextView
-            android:id="@+id/nav_friends"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="♧\n@string/friends"
-            android:textColor="@color/muted"
-            android:textSize="12sp" />
-        <TextView
-            android:id="@+id/nav_notifications"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="♧\n@string/notifications"
-            android:textColor="@color/muted"
-            android:textSize="12sp" />
-        <TextView
-            android:id="@+id/nav_menu"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="☰\n@string/menu"
-            android:textColor="@color/muted"
-            android:textSize="12sp" />
+        <TextView android:id="@+id/nav_home" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="⌂\nالرئيسية" android:textColor="@color/brand" android:textSize="12sp" android:textStyle="bold" />
+        <TextView android:id="@+id/nav_friends" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="♧\nالأصدقاء" android:textColor="@color/muted" android:textSize="12sp" />
+        <TextView android:id="@+id/nav_notifications" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="♧\nالإشعارات" android:textColor="@color/muted" android:textSize="12sp" />
+        <TextView android:id="@+id/nav_menu" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:gravity="center" android:text="☰\nالقائمة" android:textColor="@color/muted" android:textSize="12sp" />
     </LinearLayout>
 </LinearLayout>
