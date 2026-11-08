@@ -1,14 +1,17 @@
 <resources>
     <string name="app_name">رَبط</string>
     <string name="app_tagline">تواصل ببساطة</string>
-    <string name="stories_title">القصص</string>
-    <string name="your_story">قصتك</string>
-    <string name="new_post_hint">بم تفكر؟</string>
+    <string name="stories_title">قصص الأصدقاء</string>
+    <string name="your_story">أضف قصتك</string>
+    <string name="new_post_hint">شارك شيئًا جميلًا مع أصدقائك...</string>
     <string name="photo">صورة</string>
     <string name="check_in">تسجيل حضور</string>
     <string name="post_author">سارة أحمد</string>
-    <string name="post_time">منذ ١٥ دقيقة · عام</string>
+    <string name="post_time">منذ ١٥ دقيقة · للجميع</string>
     <string name="post_text">صباح جميل! أتمنى لكم يومًا مليئًا بالأخبار السعيدة ☀️</string>
+    <string name="post_art_caption">ابدأ يومك بابتسامة</string>
+    <string name="reaction_summary">١٢ تفاعلًا</string>
+    <string name="comment_summary">٣ تعليقات</string>
     <string name="like">إعجاب</string>
     <string name="liked">أعجبني</string>
     <string name="comment">تعليق</string>
@@ -17,13 +20,15 @@
     <string name="friends">الأصدقاء</string>
     <string name="notifications">الإشعارات</string>
     <string name="menu">القائمة</string>
+    <string name="search">بحث</string>
+    <string name="messages">الرسائل</string>
     <string name="create_post_title">منشور جديد</string>
     <string name="publish">نشر</string>
     <string name="cancel">إلغاء</string>
     <string name="empty_post">اكتب شيئًا قبل النشر</string>
     <string name="post_published">تمت إضافة منشورك إلى الخلاصة</string>
     <string name="your_name">أنت</string>
-    <string name="just_now">الآن · عام</string>
+    <string name="just_now">الآن · للجميع</string>
     <string name="add_comment">أضف تعليقًا</string>
     <string name="comment_hint">اكتب تعليقك</string>
     <string name="send">إرسال</string>
@@ -34,6 +39,7 @@
     <string name="search_coming_soon">البحث سيُتاح قريبًا</string>
     <string name="photo_coming_soon">إضافة الصور ستُتاح قريبًا</string>
     <string name="checkin_coming_soon">تسجيل الحضور سيُتاح قريبًا</string>
+    <string name="messages_coming_soon">الرسائل ستُتاح قريبًا</string>
     <string name="story_name_1">ليلى</string>
     <string name="story_name_2">عمر</string>
     <string name="story_name_3">مريم</string>

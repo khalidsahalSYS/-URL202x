@@ -20,14 +20,16 @@ class MainActivity : Activity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        navigationIds.forEach { id ->
-            findViewById<View>(id).setOnClickListener { selectNavigation(id) }
-        }
+        navigationIds.forEach { id -> findViewById<View>(id).setOnClickListener { selectNavigation(id) } }
         findViewById<View>(R.id.create_post).setOnClickListener { showCreatePostDialog() }
         findViewById<View>(R.id.post_action_like).setOnClickListener { toggleLike(it as TextView) }
         findViewById<View>(R.id.post_action_comment).setOnClickListener { showCommentDialog() }
-        findViewById<View>(R.id.search_button).setOnClickListener {
-            Toast.makeText(this, getString(R.string.search_coming_soon), Toast.LENGTH_SHORT).show()
+        findViewById<View>(R.id.post_action_share).setOnClickListener {
+            Toast.makeText(this, getString(R.string.share_coming_soon), Toast.LENGTH_SHORT).show()
+        }
+        findViewById<View>(R.id.search_button).setOnClickListener { showSearchDialog() }
+        findViewById<View>(R.id.messages_button).setOnClickListener {
+            Toast.makeText(this, getString(R.string.messages_coming_soon), Toast.LENGTH_SHORT).show()
         }
         findViewById<View>(R.id.photo_action).setOnClickListener {
             Toast.makeText(this, getString(R.string.photo_coming_soon), Toast.LENGTH_SHORT).show()
@@ -44,6 +46,22 @@ class MainActivity : Activity() {
         if (selectedId != R.id.nav_home) {
             Toast.makeText(this, getString(R.string.navigation_coming_soon), Toast.LENGTH_SHORT).show()
         }
+    }
+
+    private fun showSearchDialog() {
+        val input = EditText(this).apply {
+            hint = getString(R.string.search_hint)
+            setSingleLine(true)
+            setPadding(dp(16), dp(12), dp(16), dp(12))
+        }
+        AlertDialog.Builder(this)
+            .setTitle(R.string.search)
+            .setView(input)
+            .setNegativeButton(R.string.cancel, null)
+            .setPositiveButton(R.string.search) { _, _ ->
+                Toast.makeText(this, getString(R.string.search_coming_soon), Toast.LENGTH_SHORT).show()
+            }
+            .show()
     }
 
     private fun showCreatePostDialog() {
@@ -69,11 +87,11 @@ class MainActivity : Activity() {
     }
 
     private fun addPost(text: String) {
-        val feed = findViewById<LinearLayout>(R.id.feed_container)
+        val feed = findViewById<LinearLayout>(R.id.feed_posts)
         val card = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             setPadding(dp(14), dp(14), dp(14), dp(8))
-            setBackgroundResource(R.drawable.bg_card)
+            setBackgroundColor(color(R.color.surface))
             layoutParams = LinearLayout.LayoutParams(
                 ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT
@@ -91,7 +109,7 @@ class MainActivity : Activity() {
             setPadding(0, dp(12), 0, dp(12))
         }
         val like = TextView(this).apply {
-            text = "♡  " + getString(R.string.like)
+            this.text = "♡  " + getString(R.string.like)
             textSize = 14f
             gravity = Gravity.CENTER
             setTextColor(color(R.color.muted))
