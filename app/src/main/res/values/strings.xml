@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">رَبط</string>
+    <string name="app_tagline">تواصل ببساطة</string>
+    <string name="stories_title">القصص</string>
+    <string name="your_story">قصتك</string>
+    <string name="new_post_hint">بم تفكر؟</string>
+    <string name="photo">صورة</string>
+    <string name="check_in">تسجيل حضور</string>
+    <string name="post_author">سارة أحمد</string>
+    <string name="post_time">منذ ١٥ دقيقة · عام</string>
+    <string name="post_text">صباح جميل! أتمنى لكم يومًا مليئًا بالأخبار السعيدة ☀️</string>
+    <string name="like">إعجاب</string>
+    <string name="liked">أعجبني</string>
+    <string name="comment">تعليق</string>
+    <string name="share">مشاركة</string>
+    <string name="home">الرئيسية</string>
+    <string name="friends">الأصدقاء</string>
+    <string name="notifications">الإشعارات</string>
+    <string name="menu">القائمة</string>
+    <string name="post_coming_soon">إنشاء المنشورات سيُتاح قريبًا</string>
+    <string name="comments_coming_soon">التعليقات ستُتاح قريبًا</string>
+    <string name="navigation_coming_soon">هذه الصفحة ستُتاح قريبًا</string>
+    <string name="story_name_1">ليلى</string>
+    <string name="story_name_2">عمر</string>
+    <string name="story_name_3">مريم</string>
+</resources>
