@@ -1,15 +1,15 @@
 # -URL202x
 
-A lightweight Android social networking app inspired by the simplicity and low-data approach of Facebook Lite.
+تطبيق اجتماعي خفيف لأجهزة Android، مستوحى من بساطة تطبيقات التواصل الخفيفة مثل Facebook Lite، مع التركيز على السرعة وتقليل استهلاك البيانات والذاكرة.
 
-## Compatibility
+## التوافق
 
-The app is intended to support Android 5.0 (Lollipop, API 21) through Android 16 (API 36).
+يهدف التطبيق إلى دعم Android 5.0 (Lollipop، API 21) حتى Android 16 (API 36).
 
-## Goals
+## أهداف المشروع
 
-- Provide a fast, simple mobile experience.
-- Keep network and storage use low, especially on slower connections and older devices.
-- Use an interface that works well across supported Android versions.
+- تقديم تجربة استخدام بسيطة وسريعة.
+- تقليل استهلاك الإنترنت ومساحة التخزين، خصوصًا عند الاتصال البطيء وعلى الأجهزة القديمة.
+- توفير واجهة مناسبة لمختلف إصدارات Android المدعومة.
 
-> This repository currently documents the project concept; app implementation and feature details are to be added.
+> يصف هذا المستودع فكرة المشروع حاليًا؛ وسيُضاف تنفيذ التطبيق وتفاصيل ميزاته لاحقًا.
